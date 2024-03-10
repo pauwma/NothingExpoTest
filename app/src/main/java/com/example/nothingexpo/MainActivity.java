@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
 
         mGM = GlyphManager.getInstance(getApplicationContext());
         mGM.init(mCallback);
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         channelCBtn = findViewById(R.id.channelC_btn);
         channelDBtn = findViewById(R.id.channelD_btn);
 
-        init();
+
         initView();
     }
 
